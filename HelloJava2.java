@@ -5,9 +5,9 @@ import javax.swing.*;
 public class HelloJava2
 {
 
-    public static void main(string args[])
+    public static void main(String args[])
     {
-        Jframe frame = new Jframe("HelloJava2");
+        JFrame frame = new JFrame("HelloJava2");
         frame.getContentPane().add(new HelloComponent2("Hello Java!"));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300, 300);
@@ -17,12 +17,10 @@ public class HelloJava2
 
 }
 
-class HelloComponent2 extends JComponent
-    implements MouseMotionListener
-
+class HelloComponent2 extends JComponent implements MouseMotionListener
 {
     String theMessage;
-    int messageX = 125, int messageY = 95;
+    int messageX = 125, messageY = 95;
 
     public HelloComponent2(String message)
     {
@@ -43,8 +41,4 @@ class HelloComponent2 extends JComponent
     }
 
     public void mouseMoved(MouseEvent e) {}
-
-
-
-
 }
